@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,17 +7,14 @@ public class Push : MonoBehaviour
 {
     private GameObject[] obstacles;
     private GameObject[] objToPush;
+
     void Start()
     {
         obstacles = GameObject.FindGameObjectsWithTag("Obstacle");
         objToPush = GameObject.FindGameObjectsWithTag("ObjToPush");
     }
 
-    void Update()
-    {
-
-    }
-    public bool Move (Vector2 direction)
+    public bool Move(Vector2 direction)
     {
         if (objToBlocked(transform.position, direction))
         {
@@ -49,4 +47,5 @@ public class Push : MonoBehaviour
         }
         return false;
     }
+  
 }

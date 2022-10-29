@@ -22,7 +22,7 @@ public class PlyerMovimentScript : MonoBehaviour
 
         if (moveinput.sqrMagnitude > 0.5)
         {
-            if (toMove)
+            if (toMove) 
             {
                 toMove = false;
                 Move(moveinput);
