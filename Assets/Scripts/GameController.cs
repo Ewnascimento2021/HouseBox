@@ -3,14 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GameController : MonoBehaviour
-{
 
+{
     public GameObject[] quantBox;
     private int boxCount;
+
+    [SerializeField]
+    private AudioSource Music;
 
     void Start()
     {
             quantBox = GameObject.FindGameObjectsWithTag("ObjToPush");
+        Music.Play();
     }
 
     void Update()
@@ -33,7 +37,6 @@ public class GameController : MonoBehaviour
             }
         }
     }
-
 }
 
 

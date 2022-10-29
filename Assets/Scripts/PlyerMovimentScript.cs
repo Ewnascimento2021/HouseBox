@@ -7,6 +7,9 @@ public class PlyerMovimentScript : MonoBehaviour
     private GameObject[] obstacles;
     private GameObject[] objToPush;
 
+    [SerializeField]
+    private AudioSource audioMove;
+
     private bool toMove;
     void Start()
     {
@@ -22,8 +25,10 @@ public class PlyerMovimentScript : MonoBehaviour
 
         if (moveinput.sqrMagnitude > 0.5)
         {
+            
             if (toMove) 
             {
+                audioMove.Play();
                 toMove = false;
                 Move(moveinput);
             }
