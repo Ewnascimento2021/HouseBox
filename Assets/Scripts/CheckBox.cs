@@ -11,6 +11,7 @@ public class CheckBox : MonoBehaviour
     private Rigidbody2D rb;
     public bool checkBox;
 
+
     void Start()
     {
         //spriteConcha.sprite = box[0];
@@ -33,6 +34,8 @@ public class CheckBox : MonoBehaviour
             rb.GetComponent<SpriteRenderer>().sprite = box[1];
 
             checkBox = true;
+
+            HUDController.Instance.gameScore += 1;
         }
     }
     private void OnTriggerExit2D(Collider2D other)
@@ -42,6 +45,8 @@ public class CheckBox : MonoBehaviour
             rb.GetComponent<SpriteRenderer>().sprite = box[0];
 
             checkBox = false;
+
+            HUDController.Instance.gameScore -= 1;
         }
     }
 
