@@ -6,9 +6,8 @@ using UnityEngine.UI;
 
 namespace Ewerton.Housebox.Menu
 {
-    public class IGiveUpController : MonoBehaviour
+    public class GiveUpController : MonoBehaviour
     {
-
         [SerializeField]
         private Button IGiveUpButton;
 
