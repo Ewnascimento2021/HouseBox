@@ -1,0 +1,160 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GameSprites
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 72759dfc1dee3f84e8a6811da17db6b7, type: 3}
+    - {fileID: 102900000, guid: 9ded37779df460f43ad1d350ab2ab852, type: 3}
+    - {fileID: 102900000, guid: 67d9a10b85b8ab14a91bb7fa375f486d, type: 3}
+    - {fileID: 102900000, guid: 678a1e69dc181b5459350d507909afc8, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: a0ded55061ce4bb4f8b07fbeca8f6461, type: 3}
+  - {fileID: 21300000, guid: 4b6f3d70c6301aa4194fcb911f8f43ae, type: 3}
+  - {fileID: 21300000, guid: c97e83f0fbef69f4194ccca16ab731a7, type: 3}
+  - {fileID: 21300000, guid: 864c94f04321e2c4da43aec46f3068fe, type: 3}
+  - {fileID: 21300000, guid: 854e8211e0597734994b13e63701b517, type: 3}
+  - {fileID: 21300000, guid: d3a01b11d8fa9c2458ae5dd78d07ea6c, type: 3}
+  - {fileID: 21300000, guid: 5ef88361acfe20043b6ec2983816515f, type: 3}
+  - {fileID: 21300000, guid: 538827614cac0ef489e202bd2719f5eb, type: 3}
+  - {fileID: 21300000, guid: a087d48192b5df040b3f24aa19eb5368, type: 3}
+  - {fileID: 21300000, guid: 6ed146a1304854044a8c62aa76c4c2c4, type: 3}
+  - {fileID: 21300000, guid: 23f518c130ca92141b1e33331b1752da, type: 3}
+  - {fileID: 21300000, guid: e87691e1fcf117a4d941e4b933eda8d1, type: 3}
+  - {fileID: 21300000, guid: 5201bab20bfee7d40ba5bb9cf8e40e23, type: 3}
+  - {fileID: 21300000, guid: 2d48a30364dcb2e4a95e8ed372a51f70, type: 3}
+  - {fileID: 21300000, guid: bac6c923912cea04387748230c7bdd72, type: 3}
+  - {fileID: 21300000, guid: 4bc7ba633309eae4da84e395ff1fe481, type: 3}
+  - {fileID: 21300000, guid: a7c14d745ba2f134098f7aeb070839ac, type: 3}
+  - {fileID: 21300000, guid: a8cbdca445d9f11488841e022321a2f5, type: 3}
+  - {fileID: 21300000, guid: ba8191f455aa18541a2dd1a8632958d9, type: 3}
+  - {fileID: 21300000, guid: a2804f85838259943a8db21064f78667, type: 3}
+  - {fileID: 21300000, guid: b78cfba5d7f9ad041ab06b098bb6042d, type: 3}
+  - {fileID: 21300000, guid: 4b9e96f51bf23d94eaf48e24c341e2c0, type: 3}
+  - {fileID: 21300000, guid: ed036746bab3907469eda0e41afbf66b, type: 3}
+  - {fileID: 21300000, guid: 8f46203739dc371428d2092fe7ef1725, type: 3}
+  - {fileID: 21300000, guid: 52bda947944e4e044a4548d54023f9c8, type: 3}
+  - {fileID: 21300000, guid: b4321d670d506aa4d8e1c8b80380c20a, type: 3}
+  - {fileID: 21300000, guid: eb707487f6ab5124fbeffe0525f368f4, type: 3}
+  - {fileID: 21300000, guid: 2a0d2bf7f9e5d764a8955509beda5046, type: 3}
+  - {fileID: 21300000, guid: fb27a218383614a42a654cdc306701cf, type: 3}
+  - {fileID: 21300000, guid: 24c8fb3852a14fa43a5d6a7add3c1b2b, type: 3}
+  - {fileID: 21300000, guid: 307684a823d8cf34db99548ee75cd8b8, type: 3}
+  - {fileID: 21300000, guid: 92936eb8290753748aa1f13f6e59a8f4, type: 3}
+  - {fileID: 21300000, guid: 777449d8ab5fe9f4586b5b896415f57f, type: 3}
+  - {fileID: 21300000, guid: 648c9609ca3a2df4e8b3ad633277c626, type: 3}
+  - {fileID: 21300000, guid: 5e739b0954b370445a9199f921f462fc, type: 3}
+  - {fileID: 21300000, guid: c949f2995f1d5114daa6cc54b8e0fa74, type: 3}
+  - {fileID: 21300000, guid: b3300fa907354c446a461caa41dad517, type: 3}
+  - {fileID: 21300000, guid: a407734ad2a9ddd488a86c2ca1b3d5a7, type: 3}
+  - {fileID: 21300000, guid: ce70839a7c9829d4c9521fb2207db28f, type: 3}
+  - {fileID: 21300000, guid: a7d6cf9aee3259c4eadc274d109ff37b, type: 3}
+  - {fileID: 21300000, guid: 6210dbea3499cdf4994bc7a87b9abc51, type: 3}
+  - {fileID: 21300000, guid: 80eb474b8fac5f44bb45e6f75abc8e7f, type: 3}
+  - {fileID: 21300000, guid: c1f0328b7b321fb46b0121d8a03ed1ca, type: 3}
+  - {fileID: 21300000, guid: 75c09abb94c0ba443914ae0eb72b7af3, type: 3}
+  - {fileID: 21300000, guid: ad9c151c9f0109c408587ec490acbe19, type: 3}
+  - {fileID: 21300000, guid: 3ff7046c078ebe24eb9f1f95f8f7ee20, type: 3}
+  - {fileID: 21300000, guid: 409306cc215b53245a25d022bec4a76d, type: 3}
+  - {fileID: 21300000, guid: 7861be4d7cac2c74a8ba65cd35280b55, type: 3}
+  - {fileID: 21300000, guid: d993d77dd26882946bc2d79d922f19ce, type: 3}
+  - {fileID: 21300000, guid: d895fd9d03fdbdd46b62d7f0801dfefc, type: 3}
+  - {fileID: 21300000, guid: 705d063e872481f4bac1c271384a4b4a, type: 3}
+  - {fileID: 21300000, guid: a725954e16a7e7c44b20feab8c0c1381, type: 3}
+  - {fileID: 21300000, guid: 8da3274ed8b1e45459019c3fda9cb3dd, type: 3}
+  - {fileID: 21300000, guid: 44b4185ede7df6d46aa1bb3885ed4875, type: 3}
+  - {fileID: 21300000, guid: c905339e8fc6425478b1d805e9f64d7d, type: 3}
+  - {fileID: 21300000, guid: 9fbbe79ff99ec9e4197e8426aef72487, type: 3}
+  - {fileID: 21300000, guid: 70f24dcf1c9cbf34280c0c1ab4863779, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - player_10
+  - crate_04
+  - player_15
+  - ground_02
+  - player_16
+  - player_18
+  - crate_27
+  - crate_38
+  - crate_41
+  - player_03
+  - player_20
+  - player_23
+  - block_03
+  - ground_04
+  - player_17
+  - crate_16
+  - crate_05
+  - block_01
+  - player_07
+  - player_22
+  - player_19
+  - ground_05
+  - crate_30
+  - player_09
+  - crate_29
+  - ground_10
+  - player_24
+  - block_02
+  - player_08
+  - ground_01
+  - crate_39
+  - player_11
+  - crate_13
+  - crate_37
+  - crate_28
+  - player_14
+  - ground_09
+  - ground_07
+  - crate_03
+  - player_02
+  - ground_06
+  - player_05
+  - crate_14
+  - player_13
+  - ground_08
+  - crate_12
+  - crate_40
+  - player_21
+  - crate_15
+  - player_04
+  - crate_31
+  - crate_02
+  - player_06
+  - player_12
+  - ground_03
+  - crate_06
+  - player_01
+  m_RenderDataMap: {}
+  m_Tag: GameSprites
+  m_IsVariant: 0
