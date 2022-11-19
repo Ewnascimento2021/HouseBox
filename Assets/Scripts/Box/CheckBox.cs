@@ -11,8 +11,7 @@ namespace Ewerton.Housebox.Box
         private Sprite[] box = new Sprite[2];
         public Sprite[] Box => box;
 
-        private bool isBoxCheckd;
-        public bool IsBoxCheckd => isBoxCheckd;
+        public bool IsBoxCheckd { get; }
 
         private Rigidbody2D rb;
 
