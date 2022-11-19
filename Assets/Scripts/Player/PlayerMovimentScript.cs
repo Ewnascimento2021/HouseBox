@@ -1,6 +1,4 @@
 using Ewerton.Housebox.GameCore;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Ewerton.Housebox.Player
