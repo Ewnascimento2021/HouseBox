@@ -17,6 +17,7 @@ namespace Ewerton.Housebox.Menu
             Time.timeScale = 1;
             IGiveUpButton.onClick.AddListener(ExitToMenu);
         }
+
         private void ExitToMenu()
         {
             SceneManager.LoadScene("Menu");
