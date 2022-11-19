@@ -26,7 +26,7 @@ namespace Ewerton.Housebox.GameCore
 
             for (int i = 0; i < quantBox.Length; i++)
             {
-                if (!quantBox[i].GetComponent<CheckBox>().IsBoxCheckd)
+                if (!quantBox[i].GetComponent<CheckBox>().IsBoxChecked)
                 {
                     break;
                 }

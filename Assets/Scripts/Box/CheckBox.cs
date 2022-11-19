@@ -8,7 +8,7 @@ namespace Ewerton.Housebox.Box
         private Sprite[] box = new Sprite[2];
         public Sprite[] Box => box;
 
-        public bool IsBoxCheckd { get; }
+        public bool IsBoxChecked { get; set; }
 
         private Rigidbody2D rb;
 
@@ -33,7 +33,7 @@ namespace Ewerton.Housebox.Box
             {
                 rb.GetComponent<SpriteRenderer>().sprite = Box[1];
 
-                IsBoxCheckd = true;
+                IsBoxChecked = true;
 
                 HUDController.Instance.gameScore += 1;
             }
@@ -44,7 +44,7 @@ namespace Ewerton.Housebox.Box
             {
                 rb.GetComponent<SpriteRenderer>().sprite = Box[0];
 
-                IsBoxCheckd = false;
+                IsBoxChecked = false;
 
                 HUDController.Instance.gameScore -= 1;
             }
