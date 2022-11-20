@@ -24,15 +24,11 @@ namespace Ewerton.Housebox.Player
             Vector2 moveinput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
             moveinput.Normalize();
 
-            if (moveinput.sqrMagnitude > 0.5)
+            if (moveinput.sqrMagnitude > 0.5 && toMove)
             {
-
-                if (toMove)
-                {
-                    audioMove.Play();
-                    toMove = false;
-                    Move(moveinput);
-                }
+                audioMove.Play();
+                toMove = false;
+                Move(moveinput);
             }
             else
             {
@@ -50,6 +46,7 @@ namespace Ewerton.Housebox.Player
             {
                 direction.y = 0;
             }
+
             direction.Normalize();
 
             if (Blocked(transform.position, direction))
@@ -58,10 +55,36 @@ namespace Ewerton.Housebox.Player
             }
             else
             {
+                // TODO: Mover com o rigidibody se depende de física
                 transform.Translate(direction);
                 return true;
             }
         }
+
+        //TODO: Eu acho que a forma como este metodo está escrito pode ser melhorado para facilitar a leitura. 
+        //Principalemtne no segundo foreach. Evita usar um if dentro de outro, se for perciso faz outro método. Por exemplo:
+        /*
+            foreach (var objToPush in objToPush)
+            {
+                if (objToPush.transform.position.x == newpos.x && objToPush.transform.position.y == newpos.y)
+                {
+                    Push objpush = objToPush.GetComponent<Push>();
+
+                    return CanPush(Vector2 direction);
+                }
+            }
+
+        private bool CanPush(Vector2 direction)
+        {
+            if (objpush && objpush.Move(direction))
+            {
+                return false;
+            }
+
+            return true;
+        }
+
+        */
 
         public bool Blocked(Vector3 position, Vector2 direction)
         {
@@ -79,7 +102,6 @@ namespace Ewerton.Housebox.Player
                 if (objToPush.transform.position.x == newpos.x && objToPush.transform.position.y == newpos.y)
                 {
                     Push objpush = objToPush.GetComponent<Push>();
-
 
                     if (objpush && objpush.Move(direction))
                     {
