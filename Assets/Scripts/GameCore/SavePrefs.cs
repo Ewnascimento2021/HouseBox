@@ -14,10 +14,6 @@ namespace Ewerton.Housebox.GameCore
         {
             score = HUDController.Instance.gameScore;
         }
-        private void Update()
-        {
-
-        }
 
         private void BestPotuation()
         {
