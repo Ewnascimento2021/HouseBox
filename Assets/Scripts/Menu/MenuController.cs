@@ -12,6 +12,7 @@ namespace Ewerton.Housebox.Menu
 
         private void Awake()
         {
+            //TODO: Esse timescale é realmente necessario?
             Time.timeScale = 1;
             startButton.onClick.AddListener(Fase1);
         }

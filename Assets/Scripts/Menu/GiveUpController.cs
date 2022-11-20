@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -14,6 +12,7 @@ namespace Ewerton.Housebox.Menu
 
         private void Awake()
         {
+            //TODO: Esse timescale é realmente necessario?
             Time.timeScale = 1;
             IGiveUpButton.onClick.AddListener(ExitToMenu);
         }
