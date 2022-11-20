@@ -21,6 +21,8 @@ namespace Ewerton.Housebox.GameCore
             }
             else
             {
+                // TODO: Não use o tranlate em objetos que possam depender de física: verificar colisão por exemplo.
+                // Use o rigidbody.MovePosition (ou algo assim)
                 transform.Translate(direction);
                 return true;
             }
