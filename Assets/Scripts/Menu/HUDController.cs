@@ -5,7 +5,6 @@ namespace Ewerton.Housebox.Menu
 {
     public class HUDController : MonoBehaviour
     {
-
         static HUDController instance;
         public static HUDController Instance
         {
@@ -23,16 +22,11 @@ namespace Ewerton.Housebox.Menu
         [SerializeField]
         private TMP_Text scoreText;
 
-        void Start()
-        {
-        
-        }
-
-
         private void FixedUpdate()
         {
             ScoreUp();
         }
+
         public void ScoreUp()
         {
             scoreText.text = "Boxes: " + gameScore.ToString();
