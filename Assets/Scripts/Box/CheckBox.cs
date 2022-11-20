@@ -5,6 +5,7 @@ namespace Ewerton.Housebox.Box
 {
     public class CheckBox : MonoBehaviour
     {
+        [SerializeField]
         private Sprite[] box = new Sprite[2];
         public Sprite[] Box => box;
 
