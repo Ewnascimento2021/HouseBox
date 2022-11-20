@@ -11,12 +11,6 @@ namespace Ewerton.Housebox.Player
         public Text inputText;
         public Text loadedName;
 
-
-        void Start()
-        {
-
-        }
-
         // Update is called once per frame
         void Update()
         {
