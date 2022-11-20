@@ -12,30 +12,26 @@ namespace Ewerton.Housebox.Box
         public bool IsBoxChecked { get; set; }
 
         private Rigidbody2D rb;
+        private Sprite currentSprite;
 
         void Start()
         {
-            //spriteConcha.sprite = box[0];
             rb = GetComponent<Rigidbody2D>();
-            rb.GetComponent<SpriteRenderer>().sprite = Box[0];
+            currentSprite = GetComponent<SpriteRenderer>().sprite;
+            SetSprite(Box[0]);
         }
 
-
-        void Update()
+        private void SetSprite(Sprite newSprite)
         {
-
+            currentSprite = newSprite;
         }
-
-
 
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (other.CompareTag("Base"))
             {
-                rb.GetComponent<SpriteRenderer>().sprite = Box[1];
-
+                SetSprite(Box[1]);
                 IsBoxChecked = true;
-
                 HUDController.Instance.gameScore += 1;
             }
         }
@@ -43,15 +39,10 @@ namespace Ewerton.Housebox.Box
         {
             if (other.CompareTag("Base"))
             {
-                rb.GetComponent<SpriteRenderer>().sprite = Box[0];
-
+                SetSprite(Box[0]);
                 IsBoxChecked = false;
-
                 HUDController.Instance.gameScore -= 1;
             }
         }
-
     }
 }
-
-
