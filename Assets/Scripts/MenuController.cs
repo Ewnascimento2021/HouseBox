@@ -8,16 +8,28 @@ public class MenuController : MonoBehaviour
 {
     [SerializeField]
     private Button startButton;
-    
+    [SerializeField]
+    private AudioSource audioClick;
+    [SerializeField]
+    private Button quitButton;
+
+
 
     private void Awake()
     {
         Time.timeScale = 1;
         startButton.onClick.AddListener(Fase1);
+        quitButton.onClick.AddListener(QuitGame);
     }
 
     private void Fase1()
     {
-        SceneManager.LoadScene("PrototypeScene");
+        audioClick.Play();
+        SceneManager.LoadScene("Fase1");
+    }
+
+    private void QuitGame()
+    {
+        Application.Quit();
     }
 }

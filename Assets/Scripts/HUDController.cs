@@ -25,12 +25,7 @@ public class HUDController : MonoBehaviour
     [SerializeField]
     private TMP_Text scoreText;
 
-    void Start()
-    {
-        
-    }
-
-
+  
     private void FixedUpdate()
     {
         ScoreUp();

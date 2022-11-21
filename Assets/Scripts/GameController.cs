@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 
@@ -11,9 +12,13 @@ public class GameController : MonoBehaviour
     [SerializeField]
     private AudioSource Music;
 
+    [SerializeField]
+    private int faseNumber;
+
+
     void Start()
     {
-            quantBox = GameObject.FindGameObjectsWithTag("ObjToPush");
+        quantBox = GameObject.FindGameObjectsWithTag("ObjToPush");
         Music.Play();
     }
 
@@ -32,7 +37,35 @@ public class GameController : MonoBehaviour
                 boxCount++;
                 if (boxCount == quantBox.Length)
                 {
-                    //TODO: Chamar Proxima Fase;
+                    
+                    faseNumber++;
+                    
+                    
+                    switch (faseNumber)
+                    {
+
+                        case 2:
+                            SceneManager.LoadScene("Fase2");
+                            break;
+
+                        case 3:
+                            SceneManager.LoadScene("Fase3");
+                            break;
+
+                        case 4:
+                            SceneManager.LoadScene("Fase4");
+                            break;
+
+                        case 5:
+                            SceneManager.LoadScene("Fase5");
+                            break;
+
+                        case 6:
+                            SceneManager.LoadScene("GameOver");
+                            break;
+                        default:
+                            break;
+                    }
                 }
             }
         }

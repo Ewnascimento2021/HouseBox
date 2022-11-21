@@ -18,6 +18,6 @@ public class IGiveUpController : MonoBehaviour
     }
     private void ExitToMenu()
     {
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("GameOver");
     }
 }
